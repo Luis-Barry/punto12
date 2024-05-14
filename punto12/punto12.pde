@@ -19,7 +19,6 @@ void setup(){
 void draw(){
   background(255);
   
-  // Actualizar y dibujar objetos del juego
   player.position.x = mouseX;
   player.position.y = mouseY;
   
