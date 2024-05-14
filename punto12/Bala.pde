@@ -1,19 +1,19 @@
 class Bala{
   PVector position;
   PVector velocity;
+  PImage image;
   
-  Bala(PVector position, PVector velocity) {
+  Bala(PVector position, PVector velocity, PImage image) {
     this.position = position;
     this.velocity = velocity;
+    this.image = image;
   }
   
-  void update() {
+  public void update() {
     position.add(velocity);
   }
   
   public void display(){
-    // Dibujar la bala
-    fill(0);
-    ellipse(position.x, position.y, 5, 5);
+    image(image, position.x, position.y);
   }
 }
